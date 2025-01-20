@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class HelloWorld : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int _number_test;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private int _number_test2;
+
+    [ContextMenu("Add")]
+    private void Add()
+
+
     {
-        
+
+        Debug.Log(this._number_test + this._number_test2);
     }
 }
